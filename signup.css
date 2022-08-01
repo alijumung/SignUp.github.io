@@ -302,6 +302,7 @@ a{
   color: #555;
   cursor: pointer;
   display: inline-block;
+  text-decoration: none;
 }
 .log-in-form::before{
   content: "I Already have an account";
