@@ -191,7 +191,7 @@ html {
 .social-media {
   display: flex;
 }
-.social-media i {
+.social-media p {
   width: 4rem;
   height: 4rem;
   border: 0.1rem solid #777;
@@ -202,7 +202,16 @@ html {
   margin-right: 2rem;
   font-size: 2rem;
   color: #555;
+  transition: background-color 0.10s;
+  transition: color 0.15s;
 }
+.social-media a {
+  color: #555 
+}
+.social-media p:hover{
+  opacity: 0.8;
+}
+
 
 .signup-form p {
   font-size: 1.8rem;
@@ -216,6 +225,8 @@ html {
 }
 .input-group {
   position: relative;
+  transition: opacity 0.15s;
+  
 }
 .input-group input {
   width: 28rem;
@@ -224,6 +235,8 @@ html {
   background-color: #ddd;
   border: none;
   border-radius: 0.5rem;
+  transition: opacity 1s;
+  
 }
 .input-group i {
   position: absolute;
@@ -232,6 +245,16 @@ html {
   transform: translateY(-50%);
   font-size: 1.2rem;
   color: #555;
+  transition: opacity 0.15s;
+  
+}
+.input-group input:focus{
+  border:solid 0.01px;
+  border-radius: 6px;
+  border-color: rgb(129, 124, 124);
+}
+.input-group:hover{
+  opacity: 0.8;
 }
 a{
   text-decoration: none;
@@ -276,10 +299,10 @@ a{
   margin-top: 50px;
   transition: margin 5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.signup-form button:hover {
+.signup-form button:hover, .login-form button:hover{
   opacity: 0.7;
 }
-.signup-form button:active {
+.signup-form button:active, .login-form button:active {
   opacity: 0.5;
 }
 @keyframes change {
