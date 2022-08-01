@@ -16,6 +16,7 @@ html {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  flex-shrink :2;
 }
 .banner {
   position: absolute;
@@ -47,6 +48,8 @@ html {
   height: 100%;
   background: linear-gradient(-45deg, #EE7752, #E73C7E,#23A6D5,#23D5AB);
   background-size: 400% 400%;
+  display: flex;
+  flex-shrink: none;
   animation: change 10s ease-in-out infinite;
   position: absolute;
   top: 0;
@@ -86,10 +89,10 @@ html {
   opacity: 0;
 }
 .container.change1 .signup-form {
-  left: -10rem;
+  z-index: -2;
 }
 .container.change1 .login-form {
-  left: 40rem
+  z-index: 0;
 }
 .container.change1 .log-in-form {
   left: 64.6rem
@@ -131,7 +134,7 @@ html {
   justify-content: space-around;
   align-items: center;
   padding: 10rem 0;
-  transition: left 0.50s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: z-index 0.30s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 0;
 }
 .login-form {
@@ -139,14 +142,14 @@ html {
   height: 100%;
   position: absolute;
   top: 0;
-  left: -1rem;
+  left: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 10rem 0;
-  transition: left 0.50s cubic-bezier(0.19, 1, 0.22, 1);
-  z-index: 0;
+  transition: z-index 0.30s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: -3;
 }
 .login-form h1 {
   font-size: 4rem;
@@ -308,5 +311,4 @@ a{
 .log-in-form:hover{
   text-decoration: underline;
 }
-
 
