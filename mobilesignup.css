@@ -1,0 +1,70 @@
+@media only screen and (max-width:700px) {
+  .mobile-container{
+    background-color: #eee;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+ .sign-up{
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #eee
+ }
+ .sign-up h1 {
+  font-size: 2.40rem;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E,#23A6D5,#23D5AB);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: change 10s ease-in-out infinite;
+  margin-bottom: 3rem;
+ }
+ .sign-up button {
+  width: 10rem;
+  height: 4rem;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E,#23A6D5,#23D5AB);
+  background-size: 400% 400%;
+  animation: change 10s ease-in-out infinite;
+  border: #777;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  margin-top: 10rem;
+ }
+ .input-group2{
+  width: 10rem;
+  height: 5rem;
+  padding: 1rem 1rem 1rem 3rem;
+  background-color: #ddd;
+  border: none;
+  border-radius: 0.5rem;
+  transition: opacity 1s;
+ }
+ .input-group2 i {
+  position: absolute;
+  top: 23rem;
+  left: 10rem;
+  font-size: 1.2rem;
+  color: #555;
+  transition: opacity 0.15s;
+ }
+  
+  .container{
+    height: 0vh;
+  }
+}
