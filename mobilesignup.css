@@ -45,10 +45,11 @@
   cursor: pointer;
   transition: opacity 0.4s;
   margin-top: 5rem;
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.3);
  }
  .input-group2{
   padding: 1rem 1rem 1rem 3rem;
-  background-color: #ddd;
+  background-color: transparent;
   border: none;
   border-radius: 0.5rem;
   transition: opacity 1s;
@@ -57,6 +58,7 @@
   border: none;
   outline: none;
   margin-bottom: 10px;
+  background-color: transparent;
  }
  .input-group2 i {
 
