@@ -21,7 +21,7 @@
   background-color: #eee
  }
  .sign-up h1 {
-  font-size: 2.40rem;
+  font-size: 3rem;
   background: linear-gradient(-45deg, #EE7752, #E73C7E,#23A6D5,#23D5AB);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -29,7 +29,7 @@
   -moz-text-fill-color: transparent;
   background-size: 400% 400%;
   animation: change 10s ease-in-out infinite;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
  }
  .sign-up button {
   width: 10rem;
@@ -44,21 +44,23 @@
   color: white;
   cursor: pointer;
   transition: opacity 0.4s;
-  margin-top: 10rem;
+  margin-top: 5rem;
  }
  .input-group2{
-  width: 10rem;
-  height: 5rem;
   padding: 1rem 1rem 1rem 3rem;
   background-color: #ddd;
   border: none;
   border-radius: 0.5rem;
   transition: opacity 1s;
  }
+ .input-group2 input {
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+ }
  .input-group2 i {
-  position: absolute;
-  top: 23rem;
-  left: 10rem;
+
+  margin-right: 10px;
   font-size: 1.2rem;
   color: #555;
   transition: opacity 0.15s;
@@ -67,4 +69,9 @@
   .container{
     height: 0vh;
   }
+  .input-group2 input:focus {
+    border-bottom: 1px solid;
+    border-color: #777;
+    
+   }
 }
